@@ -35,16 +35,16 @@ public class Main {
 
     public static ListNode deleteDuplicates(ListNode head) {
 
-        ListNode track = head;
+        ListNode track = head;                          //set a node to keep track and not dereference the head
 
 
 
-        while(track != null && track.next != null){
+        while(track != null && track.next != null){    //While current node or start node is not null
 
-            if(track.val == track.next.val){
+            if(track.val == track.next.val){           //If the same dereference next to the the next.next
                 track.next = track.next.next;
             }else {
-                track = track.next;
+                track = track.next;                    //Else continue
             }
 
 
@@ -54,5 +54,3 @@ public class Main {
     }
 
 }
-
-
