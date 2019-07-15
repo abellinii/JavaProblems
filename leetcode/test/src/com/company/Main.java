@@ -1,40 +1,42 @@
 package com.company;
 import java.util.Stack;
 
-
-
+//
+//Compute and return the square root of x, where x is guaranteed to be a non-negative integer.
+//
+//        Since the return type is an integer, the decimal digits are truncated and only the integer part of the result is returned.
+//
+//        Example 1:
+//
+//        Input: 4
+//        Output: 2
 
 public class Main {
 
 
     public static void main(String[] args) {
-        String a ="11";
-        String b ="1";
+        int a =400;
 
-        addBinary(a,b);
+
+        mySqrt(a);
     }
 
-    public String addBinary(String a, String b) {
-        int lenA= a.length()-1;
-        int lenB= b.length()-1;
-        int carry = 0;
-        StringBuilder result = new StringBuilder();
 
 
 
-        while(lenA >= 0 || lenB >= 0){
-            int sum = carry;
-            if(lenA >= 0)sum += a.charAt(lenA--) -'0';
-            if(lenB >= 0)sum += b.charAt(lenB--) -'0';
-            result.insert(0,Integer.toString(sum % 2));
-            carry = sum / 2;
-
+    public static int mySqrt(int x) {
+        int lo = 1, hi = x;                    //set a high and low num to dynamically check
+        while(lo < hi) {                      //while not equal
+            int mid = lo + (hi - lo) / 2 + 1; //set the mid point to disregard half the nums
+            if(mid > x / mid) {               //reset the mid point
+                hi = mid - 1;
+            } else {
+                lo = mid;
+            }
         }
-        if(carry != 0){
-            result.insert(0,carry);
-        }
-
-        return result.toString();
+        return hi;                            //When the same return
     }
 
 }
+
+//
