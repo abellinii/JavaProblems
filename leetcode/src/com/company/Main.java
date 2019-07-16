@@ -1,11 +1,23 @@
 package com.company;
+import java.util.List;
+import java.util.ArrayList;
 
-//Given a sorted linked list, delete all duplicates such that each element appear only once.
+
 //
-//        Example 1:
+//  Binary Tree Preorder Traversal
 //
-//        Input: 1->1->2
-//        Output: 1->2
+//          Given a binary tree, return the preorder traversal of its nodes' values.
+//
+//          Example:
+//
+//          Input: [1,null,2,3]
+//          1
+//          \
+//          2
+//          /
+//          3
+//
+//          Output: [1,2,3]
 
 
 
@@ -13,44 +25,41 @@ public class Main {
 
 
     public static void main(String[] args) {
-        ListNode a = new ListNode(1);
-        a.next = new ListNode(1);
-        a.next.next = new ListNode(1);
-        a.next.next.next = new ListNode(4);
-        a.next.next.next.next = new ListNode(4);
+        List<Integer> keepTrack = new ArrayList<>();    //keep track and make data structure to return;
+        TreeNode home = new TreeNode(1);            //populate tree;
+        home.left = new TreeNode(2);
+        home.left.left = new TreeNode(4);
+        home.left.right = new TreeNode(5);
+
+        home.right = new TreeNode(3);
+        home.right.left = new TreeNode(6);
+        home.right.right = new TreeNode(7);
+
+        trav(home, keepTrack);
 
 
-        deleteDuplicates(a);
+
     }
 
-    public static class ListNode {
+    public static class TreeNode {         //Create node structure
         int val;
-        ListNode next;
+        TreeNode left;
+        TreeNode right;
+        TreeNode(int x) { val = x; }
 
-        ListNode(int x) {
-            val = x;
-        }
+
     }
 
-
-    public static ListNode deleteDuplicates(ListNode head) {
-
-        ListNode track = head;                          //set a node to keep track and not dereference the head
-
-
-
-        while(track != null && track.next != null){    //While current node or start node is not null
-
-            if(track.val == track.next.val){           //If the same dereference next to the the next.next
-                track.next = track.next.next;
-            }else {
-                track = track.next;                    //Else continue
-            }
-
+    public static void trav(TreeNode root, List<Integer> vals){      // recursive function
+        if(root != null){                                             // If not null add value then run function again on right, then left
+            vals.add(root.val);                                        // Use right first because of the LIFO nature of recursion
+            trav(root.right, vals);
+            trav(root.left, vals);
 
         }
 
-        return head;
     }
 
 }
+
+
