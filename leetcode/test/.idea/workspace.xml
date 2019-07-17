@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a7cbcad-fb36-4dd6-b331-734954e4fde1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/test/com/company/Main$TreeNode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/test/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/test/com/company/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../climbingStairs/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../climbingStairs/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,8 +19,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="137">
-              <caret line="30" selection-start-line="30" selection-end-line="30" />
+            <state>
+              <caret selection-end-line="60" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -135,7 +133,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32831737" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.37072504" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.37072504" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -155,23 +153,11 @@
       <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/company/Main.java</url>
-          <line>34</line>
-          <properties />
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        <state>
+          <caret selection-end-line="60" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -2,51 +2,59 @@ package com.company;
 import java.util.List;
 import java.util.ArrayList;
 
-
 //
-//You are climbing a stair case. It takes n steps to reach to the top.
+//Given a binary tree, return the postorder traversal of its nodes' values.
 //
-//        Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top?
+//        Example:
 //
-//        Note: Given n will be a positive integer.
+//        Input: [1,null,2,3]
+//        1
+//        \
+//        2
+//        /
+//        3
 //
-//        Example 1:
-//
-//        Input: 2
-//        Output: 2
-//        Explanation: There are two ways to climb to the top.
-//        1. 1 step + 1 step
-//        2. 2 steps
-
+//        Output: [3,2,1]
 
 public class Main {
 
 
     public static void main(String[] args) {
-       int n = 54;
+        List<Integer> keepTrack = new ArrayList<>();    //keep track and make data structure to return;
+        TreeNode home = new TreeNode(1);            //populate tree;
+        home.left = new TreeNode(2);
+        home.left.left = new TreeNode(4);
+        home.left.right = new TreeNode(5);
 
-        climbStairs(n);
+        home.right = new TreeNode(3);
+        home.right.left = new TreeNode(6);
+        home.right.right = new TreeNode(7);
+
+        trav(home, keepTrack);
 
 
 
     }
 
-    public static int climbStairs(int n) {
-        int[] cache = new int[3];   //keep track of sum of 1,2
-        if (n == 1) {               //Edge case
-            return 1;
-        } else if (n == 2) {        //Edge case
-            return 2;
-        } else {
-            cache[0] = 1;           //Set initial nums
-            cache[1] = 2;
-            for (int i = 2; i < n; i++) {        //loop through possibilities
-                cache[2] = cache[0] + cache[1];  //add the two then swap
-                cache[0] = cache[1];
-                cache[1] = cache[2];
-            }
+      public static class TreeNode {         //Create node structure
+      int val;
+      TreeNode left;
+      TreeNode right;
+      TreeNode(int x) { val = x; }
+
+
+  }
+
+    public static void trav( TreeNode root, List<Integer> list){
+
+        if(root != null){
+
+            trav(root.left,list);
+            trav(root.right,list);
+            list.add(root.val);
         }
-        return cache[2];
+
+
     }
 
 }

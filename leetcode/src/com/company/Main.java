@@ -2,24 +2,19 @@ package com.company;
 import java.util.List;
 import java.util.ArrayList;
 
-
 //
-//  Binary Tree Preorder Traversal
+//Given a binary tree, return the postorder traversal of its nodes' values.
 //
-//          Given a binary tree, return the preorder traversal of its nodes' values.
+//        Example:
 //
-//          Example:
+//        Input: [1,null,2,3]
+//        1
+//        \
+//        2
+//        /
+//        3
 //
-//          Input: [1,null,2,3]
-//          1
-//          \
-//          2
-//          /
-//          3
-//
-//          Output: [1,2,3]
-
-
+//        Output: [3,2,1]
 
 public class Main {
 
@@ -50,16 +45,16 @@ public class Main {
 
     }
 
-    public static void trav(TreeNode root, List<Integer> vals){      // recursive function
-        if(root != null){                                             // If not null add value then run function again on right, then left
-            vals.add(root.val);                                        // Use right first because of the LIFO nature of recursion
-            trav(root.right, vals);
-            trav(root.left, vals);
+    public static void trav( TreeNode root, List<Integer> list){
 
+        if(root != null){
+
+            trav(root.left,list);
+            trav(root.right,list);
+            list.add(root.val);
         }
+
 
     }
 
 }
-
-
