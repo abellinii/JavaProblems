@@ -23,7 +23,7 @@ public class Main {
 
 
     public static void main(String[] args) {
-       int n = 54;
+        int n = 54;
 
         climbStairs(n);
 
@@ -50,5 +50,4 @@ public class Main {
     }
 
 }
-
 
