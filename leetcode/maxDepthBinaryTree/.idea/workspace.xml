@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c613f6ba-efb1-46c9-bdd0-0d7deb45fa0b" name="Default Changelist" comment="" />
+    <list default="true" id="3f58ee57-2bd2-4495-81d6-98990f6fc36c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../binaryTreeLevelOrderTraversal/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../binaryTreeLevelOrderTraversal/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -9,20 +11,13 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
-  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
-              <caret line="53" lean-forward="true" selection-start-line="46" selection-end-line="53" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="368">
+              <caret line="23" column="177" selection-start-line="23" selection-start-column="177" selection-end-line="23" selection-end-column="177" />
             </state>
           </provider>
         </entry>
@@ -39,6 +34,14 @@
       </list>
     </option>
   </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+        <option value="$PROJECT_DIR$/.idea/encodings.xml" />
+      </list>
+    </option>
+  </component>
   <component name="ProjectFrameBounds" extendedState="1">
     <option name="y" value="23" />
     <option name="width" value="1280" />
@@ -50,14 +53,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
       <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="ProjectPane" />
     </panes>
-  </component>
-  <component name="PropertiesComponent">
-    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -74,7 +73,7 @@
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.company.Main" />
-      <module name="binaryTreeLevelOrderTraversal" />
+      <module name="maxDepthBinaryTree" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
@@ -91,11 +90,11 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="c613f6ba-efb1-46c9-bdd0-0d7deb45fa0b" name="Default Changelist" comment="" />
-      <created>1563431887456</created>
+      <changelist id="3f58ee57-2bd2-4495-81d6-98990f6fc36c" name="Default Changelist" comment="" />
+      <created>1563434786614</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1563431887456</updated>
+      <updated>1563434786614</updated>
     </task>
     <servers />
   </component>
@@ -135,11 +134,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="53" lean-forward="true" selection-start-line="46" selection-end-line="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="368">
+          <caret line="23" column="177" selection-start-line="23" selection-start-column="177" selection-end-line="23" selection-end-column="177" />
         </state>
       </provider>
     </entry>
