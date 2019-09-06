@@ -3,6 +3,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.ArrayList;
 
+
 //Given a non-negative integer numRows, generate the first numRows of Pascal's triangle.
 //
 //
@@ -20,7 +21,6 @@ import java.util.ArrayList;
 //        [1,4,6,4,1]
 //        ]
 
-
 public class Main {
 
 
@@ -28,9 +28,9 @@ public class Main {
 
         int numRows = 5;
 
-         generate(5);
+        generate(5);
 
-  }
+    }
 
 
 
@@ -74,5 +74,3 @@ public class Main {
 
 
 }
-
-
