@@ -16,34 +16,34 @@ public class Main {
 
     public static void main(String[] args) {
 
-        int[] memo = new int[6+1];
-        climb(0,6,memo);
+        fib(30);
 
-  }
-
-
-
-
-    public static int climb(int i,int n, int[] memo){
-        if(i > n){
-            return 0;
-        }
-
-        if (i == n){
-            return 1;
-        }
-        if(memo[i] > 0){
-            return memo[i];
-        }
-
-        memo[i] = climb(i + 1,n, memo) + climb(i + 2, n , memo);
-        return memo[i];
-
-    }
 
     }
 
 
+    //Use a map to keep track of calculated values
+    public static HashMap<Integer,Integer> cache = new HashMap<Integer,Integer>();
 
+    public static int fib(int n) {
+        int result;
+        //If value exists grab
+        if(cache.containsKey(n)){
+            return cache.get(n);
+        }
 
+        //Otherwise calculate value
+        if(n < 2 ){
+            result = n;
+        }else{
+            result = fib(n-1) + fib(n-2);
+        }
+
+        //Store latest calculation
+        cache.put(n,result);
+        return result;
+
+    }
+
+}
 
