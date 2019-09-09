@@ -33,32 +33,28 @@ public class Main {
 
     public static void main(String[] args) {
 
-      myPow(0.00001,
-              2147483647);
-
-  }
-
-
-
-
-
-        public static double myPow(double x, int n) {
-
-            //Take care of ridiculous edge cases
-            if(n  < -2147483647 || n  > 2147483646){
-
-                return (x == 2.0)? 0:(n < 0 && x < 0)? Math.abs(x): x;
-            }else{
-                //Recursively call x * myPow
-                return (n == 1) ? x:(n < 0)? myPow(1 / x,-n): x * myPow(x,n - 1);
-            }
-
-        }
-
+        myPow(0.00001,
+                2147483647);
 
     }
 
 
 
 
+
+    public static double myPow(double x, int n) {
+
+        //Take care of ridiculous edge cases
+        if(n  < -2147483647 || n  > 2147483646){
+
+            return (x == 2.0)? 0:(n < 0 && x < 0)? Math.abs(x): x;
+        }else{
+            //Recursively call x * myPow
+            return (n == 1) ? x:(n < 0)? myPow(1 / x,-n): x * myPow(x,n - 1);
+        }
+
+    }
+
+
+}
 
